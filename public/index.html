@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="" />
+    <title>VRig Electron</title>
+    
+    <!-- GLTF Loader for Three.js -->
+    <!-- <script src="https://unpkg.com/three@0.133.0/examples/js/loaders/GLTFLoader.js"></script>
+    <!-- VRM Loader for Three.js -->
+    <!-- <script src="https://unpkg.com/@pixiv/three-vrm@0.6.7/lib/three-vrm.js"></script> -->
+    <!--     Mediapipe or Tensorflow.js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/holistic@0.5.1635989137/holistic.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--     Mediapipe Drawing Tools -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+      crossorigin="anonymous"
+    ></script>
+    <!--     Mediapipe Camera Tools -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div>
+      <!-- TODO: Make this preview draggable and have more options -->
+			<div class="Preview">
+				<div>
+
+        </div>
+        <video class="InputVideo" autoplay muted playsinline></video>
+				<canvas class="GuideCanvas"></canvas>
+			</div>
+    </div>
+    <div id="root"></div>
+  </body>
+</html>
